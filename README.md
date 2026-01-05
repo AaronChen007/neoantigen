@@ -274,7 +274,7 @@ Contact:
 fastqc input_file.fastq.gz -o output_directory/
 ```
 
-`input_file.fastq.gz`: Raw sequencing reads in FASTQ format
+`input_file.fastq.gz`: Raw sequencing reads in FASTQ format  
 `output_directory/`: Directory to store quality control reports
 
 This step assesses sequencing quality metrics such as base quality scores, GC content, and adapter contamination.
