@@ -1,0 +1,50 @@
+# This environment.yml is for setting up CNNeoPP, a consensus framework for neoantigen prioritization.
+# It includes all necessary dependencies and tools to run the pipeline and associated models.
+name: cnneopp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # -------------------------
+  # Core (required)
+  # -------------------------
+  - python=3.8.5
+  - pip=20.3.3
+
+  # -------------------------
+  # Core scientific stack
+  # -------------------------
+  - numpy=1.19.2
+  - pandas=1.1.5
+  - scipy=1.5.2
+  - scikit-learn=0.23.2
+  - imbalanced-learn=0.8.1
+
+  # -------------------------
+  # Data I/O
+  # -------------------------
+  - openpyxl=3.0.5
+  - xlrd=2.0.1
+
+  # Notebooks (required to run *.ipynb in models/)
+  - notebook=6.1.5
+  - ipykernel=5.3.4
+
+  # -------------------------
+  # Optional: visualization
+  # -------------------------
+  - matplotlib=3.3.2
+  - seaborn=0.11.0
+  - tqdm=4.54.1
+
+  # -------------------------
+  # pip packages
+  # -------------------------
+  - pip:
+      - torch==2.4.1
+      - torchvision==0.19.1
+      - torchaudio==2.4.1
+      - transformers==4.46.3
+      - tokenizers==0.20.3
+      - huggingface-hub==0.29.1
+      - safetensors==0.5.2
